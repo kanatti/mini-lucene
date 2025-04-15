@@ -1,4 +1,4 @@
-package org.kanatti.minilucene;
+package org.kanatti.minilucene.search;
 
 public interface BitSet {
     void set(int i);

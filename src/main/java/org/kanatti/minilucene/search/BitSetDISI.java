@@ -1,5 +1,9 @@
-package org.kanatti.minilucene;
+package org.kanatti.minilucene.search;
 
+
+/**
+ * Converts a {@link BitSet} into a {@link DocIdSetIterator}.
+ */
 public class BitSetDISI implements DocIdSetIterator {
     private final BitSet bitset;
     private int doc = NOT_STARTED;

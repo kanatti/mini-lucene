@@ -1,4 +1,4 @@
-package org.kanatti.minilucene;
+package org.kanatti.minilucene.search;
 
 public class ArrayBitSet implements BitSet {
     private final boolean[] bits;

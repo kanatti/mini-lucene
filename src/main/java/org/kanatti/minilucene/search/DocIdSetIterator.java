@@ -1,4 +1,4 @@
-package org.kanatti.minilucene;
+package org.kanatti.minilucene.search;
 
 /**
  * A way to iterate through doc-ids.

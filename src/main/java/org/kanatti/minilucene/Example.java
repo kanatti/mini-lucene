@@ -1,5 +1,11 @@
 package org.kanatti.minilucene;
 
+import org.kanatti.minilucene.search.ArrayBitSet;
+import org.kanatti.minilucene.search.ArrayDISI;
+import org.kanatti.minilucene.search.BitSet;
+import org.kanatti.minilucene.search.BitSetDISI;
+import org.kanatti.minilucene.search.DocIdSetIterator;
+
 public class Example {
     public static void main(String[] args) {
         DocIdSetIterator disi = new ArrayDISI(new int[] { 10, 11, 12, 14, 15 });

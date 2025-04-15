@@ -1,5 +1,8 @@
-package org.kanatti.minilucene;
+package org.kanatti.minilucene.search;
 
+/**
+ * A {@link DocIdSetIterator} backed by an array of doc-ids.
+ */
 public class ArrayDISI implements DocIdSetIterator {
     private final int[] docIds;
     private int idx = NOT_STARTED;
