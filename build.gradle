@@ -22,7 +22,7 @@ dependencies {
 group = 'org.kanatti'
 version = '1.0-SNAPSHOT'
 description = 'minilucene'
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+java.sourceCompatibility = JavaVersion.VERSION_25
 
 
 publishing {
@@ -43,6 +43,10 @@ java {
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
+}
+
+test {
+    failOnNoDiscoveredTests = false
 }
 
 // Define a custom task to run a specific main class
