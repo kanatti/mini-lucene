@@ -9,3 +9,6 @@ build.properties
 target/
 gradle/
 bin/
+.classpath
+.project
+.settings/

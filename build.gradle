@@ -17,6 +17,12 @@ repositories {
 }
 
 dependencies {
+    // Latest Lucene version
+    implementation 'org.apache.lucene:lucene-core:10.3.1'
+    implementation 'org.apache.lucene:lucene-analysis-common:10.3.1'
+    
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
 }
 
 group = 'org.kanatti'
@@ -55,7 +61,7 @@ task runMain(type: JavaExec) {
     description = 'Runs the specified main class'
 
     if (project.hasProperty('mainClass')) {
-        main = project.getProperty('mainClass')
+        mainClass = project.getProperty('mainClass')
         classpath = sourceSets.main.runtimeClasspath
     }
 }
