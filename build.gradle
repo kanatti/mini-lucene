@@ -6,6 +6,12 @@ plugins {
     id 'application'
     id 'java'
     id 'maven-publish'
+    id 'me.champeau.jmh' version '0.7.2'
+}
+
+jmh {
+    includes = ['.*Bitpack.*']
+    profilers = ['gc']
 }
 
 application {
@@ -20,9 +26,13 @@ dependencies {
     // Latest Lucene version
     implementation 'org.apache.lucene:lucene-core:10.3.1'
     implementation 'org.apache.lucene:lucene-analysis-common:10.3.1'
-    
+
     // Testing
     testImplementation 'junit:junit:4.13.2'
+
+    // JMH
+    jmh 'org.openjdk.jmh:jmh-core:1.37'
+    jmh 'org.openjdk.jmh:jmh-generator-annprocess:1.37'
 }
 
 group = 'org.kanatti'
