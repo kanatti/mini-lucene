@@ -74,4 +74,10 @@ task runMain(type: JavaExec) {
         mainClass = project.getProperty('mainClass')
         classpath = sourceSets.main.runtimeClasspath
     }
+
+    // Suppress Java warnings
+    jvmArgs = [
+        '--enable-native-access=ALL-UNNAMED',
+        '--add-modules', 'jdk.incubator.vector'
+    ]
 }
